@@ -62,7 +62,7 @@
         },
         {
             "type": "TextBlock",
-            "text": "From: Allkem IT Team!",
+            "text": "From: IT Team!",
             "wrap": true,
             "horizontalAlignment": "Right",
             "style": "default",
