@@ -1,0 +1,75 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Hello @{outputs('Get_user_profile_(V2)')?['body/givenName']}, ",
+                            "wrap": true,
+                            "fontType": "Default",
+                            "size": "Large",
+                            "color": "Accent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": " Today's the @{utcNow('dd-MM')}, and that can only mean one thing – It's your special day!",
+            "fontType": "Default",
+            "size": "Default",
+            "color": "Good",
+            "wrap": true,
+            "horizontalAlignment": "Center",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Wishing you a wonderful day.",
+            "wrap": true,
+            "style": "heading",
+            "fontType": "Default",
+            "size": "ExtraLarge",
+            "color": "Accent",
+            "horizontalAlignment": "Center",
+            "weight": "Bolder",
+            "spacing": "Medium"
+        },
+        {
+            "type": "Image",
+            "url": "https://media.giphy.com/media/XPwHbs2IBLAUezGUsy/giphy.gif",
+            "spacing": "Medium"
+        },
+        {
+            "type": "TextBlock",
+            "text": "May your journey with us be filled with continuous growth!",
+            "wrap": true,
+            "horizontalAlignment": "Center",
+            "color": "Good",
+            "style": "default",
+            "size": "Large",
+            "weight": "Bolder",
+            "fontType": "Default"
+        },
+        {
+            "type": "TextBlock",
+            "text": "From: Allkem IT Team!",
+            "wrap": true,
+            "horizontalAlignment": "Right",
+            "style": "default",
+            "fontType": "Default",
+            "size": "Default",
+            "color": "Good",
+            "weight": "Default"
+        }
+    ]
+}
