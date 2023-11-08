@@ -1,4 +1,4 @@
-<p><span style="font-size:20px">Welcome to the Adaptive Cards Repository!&nbsp;</span></p>
+<p><span style="font-size:25px">Welcome to the Adaptive Cards Repository!&nbsp;</span></p>
 
 <p>This repository houses a collection of Adaptive Cards I designed to enhance user experiences and interactivity in various applications.<br />
 <br />
