@@ -1,0 +1,294 @@
+{
+    "type": "AdaptiveCard",
+    "body": [{
+        "type": "Container",
+        "items": [{
+            "type": "TextBlock",
+            "text": "Digest card",
+            "size": "Large",
+            "weight": "Bolder",
+        }]
+    }],
+    "msteams": {
+        "width": "Full"
+    },
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "A New MOC Survey has been requested",
+            "wrap": true,
+            "style": "heading",
+            "fontType": "Default",
+            "size": "ExtraLarge"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Initiator: @{triggerOutputs()?['body/InitiatorName/DisplayName']}",
+            "wrap": true,
+            "style": "columnHeader",
+            "fontType": "Default",
+            "size": "Large",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "MOC Survey",
+            "spacing": "Medium",
+            "horizontalAlignment": "Center",
+            "wrap": true,
+            "style": "heading",
+            "size": "ExtraLarge",
+            "color": "Accent",
+            "fontType": "Default",
+            "weight": "Bolder"
+        },
+        {
+            "type": "Table",
+            "columns": [
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                },
+                {
+                    "width": 1
+                }
+            ],
+            "rows": [
+                {
+                    "type": "TableRow",
+                    "cells": [
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "MOC Name",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Cost",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Initiator",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Plant/Area",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "MOC Created",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Days under review",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Modified by",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Modified",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRow",
+                    "cells": [
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/{Name}']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/Cost/Value']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/InitiatorName/DisplayName']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/Plant_x002f_Area/Value']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/MOCCreated']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/Days_x0020_under_x0020_review']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/Editor/DisplayName']}",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "@{triggerOutputs()?['body/Editor/Email']}",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "View list",
+                    "url": "@{triggerOutputs()?['body/{Link}']}",
+                    "role": "Link"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "height": "stretch",
+            "separator": true
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Comments",
+            "label": "Add the reason of your choice below",
+            "id": "_comments",
+            "isRequired": true,
+            "errorMessage": "The reason for approval or rejection must be provided",
+            "spacing": "Large"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Approve",
+                    "id": "_approve"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Reject",
+                    "id": "_reject"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        }
+    ]
+}
